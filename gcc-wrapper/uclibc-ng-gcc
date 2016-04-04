@@ -1,0 +1,2 @@
+#!/bin/sh
+exec "${REALGCC:-gcc}" "$@" -specs "/usr/local/uclibc-ng/lib/uclibc-ng-gcc.specs"
