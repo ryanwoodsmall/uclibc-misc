@@ -1,6 +1,6 @@
 #!/bin/bash
 
-scriptdir="$( cd "$(dirname "${BASH_SOURCE[0]}")/.." ; pwd)"
+scriptdir="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
 for d in bin lib ; do
 	test -e /usr/local/uclibc-ng/${d} || {
