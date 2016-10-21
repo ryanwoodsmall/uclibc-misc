@@ -11,3 +11,7 @@ _uclibc-ng-gcc_ and _uclibc-ng-gcc.spec_ GCC wrappers based on musl-libc's imple
 - ```/usr/include/asm-generic``` -> ```/usr/local/uclibc-ng/include```
 - ```/usr/include/linux``` -> ```/usr/local/uclibc-ng/include```
 - ```/usr/include/mtd``` -> ```/usr/local/uclibc-ng/include```
+
+## symlinks needed on raspberry pi raspbian
+
+- ```/usr/include/arm-linux-gnueabihf/asm``` -> ```/usr/include/asm```
