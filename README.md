@@ -17,3 +17,9 @@ _uclibc-ng-gcc_ and _uclibc-ng-gcc.spec_ GCC wrappers based on musl-libc's imple
 - ```/usr/include/asm-generic``` -> ```/usr/include/arm-linux-gnueabihf/asm-generic```
 - ```/usr/include/linux``` -> ```/usr/include/arm-linux-gnueabihf/linux```
 - ```/usr/include/asm-generic``` -> ```/usr/include/asm```
+
+_or_**(?)**
+
+- ```/usr/include/arm-linux-gnueabihf/asm``` -> ```/usr/include/asm```
+
+for busybox, ```/usr/local/uclibc-ng/include/asm``` definitely needs to point at ```/usr/include/arm-linux-gnueabihf/asm```
