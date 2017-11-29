@@ -52,3 +52,8 @@ are all of these raspbian-specific, do they apply to debian/ubuntu/...?
 use the package system instead?
 yocto/poky is probably a better choice for clean builds.
 crosstool-ng is probably a better choice for a decoupled compiler.
+
+## todo
+
+- figure out aarch64 build
+- figure out proper ```KERNEL_HEADERS``` setting for arm/aarch64
