@@ -59,6 +59,12 @@ crosstool-ng is probably a better choice for a decoupled compiler.
 make install -j$(($(nproc)*2+1)) CPU_CFLAGS="-I/usr/src/linux-headers-4.19.69-rockchip/arch/arm/include -I/usr/src/linux-headers-4.19.69-rockchip/arch/arm/include/generated/uapi -I/usr/src/linux-headers-4.19.69-rockchip/arch/arm/include/generated -I/usr/src/linux-headers-4.19.69-rockchip/include/generated/uapi -I/usr/src/linux-headers-4.19.69-rockchip/include/uapi -I/usr/src/linux-headers-4.19.69-rockchip/arch/arm/include/uapi -I/usr/src/linux-headers-4.19.69-rockchip/include"
 ```
 
+## renegade example
+
+```
+make install -j$(($(nproc)*2+1)) CPU_CFLAGS="-I/usr/src/linux-headers-4.4.77-rk3328/include/generated/uapi -I/usr/src/linux-headers-4.4.77-rk3328/include/uapi -I/usr/src/linux-headers-4.4.77-rk3328/include"
+```
+
 ## todo
 
 - figure out aarch64 build
