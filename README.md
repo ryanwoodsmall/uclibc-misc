@@ -5,6 +5,14 @@ initially a simple static-only config for uClibc-ng 1.0.x
 
 _uclibc-ng-gcc_ and _uclibc-ng-gcc.spec_ GCC wrappers based on musl-libc's implementations
 
+## centos 7 locale
+
+centos 7 may need locale bits installed, particularly on armhf/aarch64 docker containers
+
+```
+localedef -i en_US -f UTF-8 en_US.UTF-8
+```
+
 ## symlinks needed on rhel/centos 6/7 systems for compiling busybox
 
 - ```/usr/include/asm``` -> ```/usr/local/uclibc-ng/include```
